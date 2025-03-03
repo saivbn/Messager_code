@@ -6,11 +6,10 @@ import pyperclip
 x = 10
 phone_number = "+919876543251"
 message = "Hello Git"
-count = x
 webbrowser.open(f"https://web.whatsapp.com/send?phone={+919876543251}")
 time.sleep(1)
 
-for i in range (count):
+for i in range (x):
     pyperclip.copy(message)
     pyautogui.hotkey("ctrl", "v")
     pyautogui.press("enter")
